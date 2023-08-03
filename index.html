@@ -14,14 +14,18 @@
               <a href="#0">
                 <img class="logo" src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="logo">
               </a>
+              <svg version="1.1" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="burger">
+                <title>Menu</title>
+                <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
+              </svg>
               <nav class="menu">
                 <ul class="menu-list">
-                  <li><a href="#0" class="menu-item">Главная</a></li>
-                  <li><a href="#0" class="menu-item">Посты</a></li>
-                  <li><a href="#0" class="menu-item">Статьи</a></li>
-                  <li><a href="#0" class="menu-item">Теги</a></li>
-                  <li><a href="#0" class="menu-item">Темы</a></li>
-                  <li><a href="#0" class="menu-item">Контакты</a></li>
+                  <li class="menu-items"><a href="#0" class="menu-item">Главная</a></li>
+                  <li class="menu-items"><a href="#0" class="menu-item">Посты</a></li>
+                  <li class="menu-items"><a href="#0" class="menu-item">Статьи</a></li>
+                  <li class="menu-items"><a href="#0" class="menu-item">Теги</a></li>
+                  <li class="menu-items"><a href="#0" class="menu-item">Темы</a></li>
+                  <li class="menu-items"><a href="#0" class="menu-item">Контакты</a></li>
                 </ul>
               </nav>
             </div>
@@ -30,21 +34,53 @@
             </h1>
           </div>
         </div>
-      </header> 
+      </header>
 
+      <div class="pop-up-container _hidden">
+        <form class="pop-up-content">
+          <button class="popup__close" type="button"><span>&times;</span></button>
+          <h2 class="header-popup">Ваш фидбек</h2>
+          <div class="frequency-area">
+            <label for="selection-area" class="question">Как часто вы заходите на сайт?</label>
+            <select class="choose-option">
+              <option class="option">Почти каждый день</option>
+              <option class="option">Раз в неделю</option>
+              <option class="option">Пару раз в неделю</option>
+              <option class="option">Раз в месяц</option>
+              <option class="option">Несколько раз в месяц</option>
+              <option class="option">Я тут в первый раз</option>
+            </select>
+          </div>
+          <div class="email-area">
+            <label for="" class="question">Вы подписаны на e-mail рассылку?</label>
+            <label class="choose">
+              <input type="radio" name="gender" class="radio-check radio-1" checked>
+              <span class=radio-text>Да</span>
+            </label>
+            <label class="choose">
+              <input type="radio" name="gender" class="radio-check radio-2">
+              <span class=radio-text>Нет</span>
+            </label>
+          </div>
+          <div class="preferences">
+            <label for="" class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+            <textarea class="text-area">Может, больше рецептов?</textarea>
+          </div>
+          <button class="popup-button">отправить</button>
+        </form>
+      </div>
 
-      <aside class="trends">
-        <section class="trends-info">
+      <section class="trends">
           <h2 class="trends-title">Сейчас в тренде</h2>
           <div class="trend-box">
             <article class="trend-article">
               <div class="trend-container trend-1">
                 <div class="trend-about">
                   <ul class="trend-list">
-                    <li><a href="#0" class="trend-item">lifestyle</a></li>
-                    <li><a href="#0" class="trend-item">interior</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">lifestyle</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">interior</a></li>
                   </ul>
-                  <h2 class="trend-name"><a href="#0" class="trend-link">Сейчас в тренде: сад на подоконнике</a></h2>
+                  <h3 class="trend-name"><a href="#0" class="trend-link">Сейчас в тренде: сад на подоконникеlo</a></h3>
                 </div>
               </div>
             </article>
@@ -52,9 +88,9 @@
               <div class="trend-container trend-2">
                 <div class="trend-about">
                   <ul class="trend-list">
-                    <li><a href="#0" class="trend-item">food</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">food</a></li>
                   </ul>
-                  <h2 class="trend-name"><a href="#0" class="trend-link">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
+                  <h3 class="trend-name"><a href="#0" class="trend-link">сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
                 </div>
               </div>
             </article>
@@ -62,10 +98,10 @@
               <div class="trend-container trend-3">
                 <div class="trend-about">
                   <ul class="trend-list">
-                    <li><a href="#0" class="trend-item">lifestyle</a></li>
-                    <li><a href="#0" class="trend-item">tavel</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">lifestyle</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">tavel</a></li>
                   </ul>
-                  <h2 class="trend-name"><a href="" class="trend-link">собираемся в первый поход в горы</a></h2>
+                  <h3 class="trend-name"><a href="" class="trend-link">собираемся в первый поход в горы</a></h3>
                 </div>
               </div>
             </article>
@@ -73,16 +109,15 @@
               <div class="trend-container trend-4">
                 <div class="trend-about">
                   <ul class="trend-list">
-                    <li><a href="#0" class="trend-item">food</a></li>
-                    <li><a href="#0" class="trend-item">health</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">food</a></li>
+                    <li class="trend-items"><a href="#0" class="trend-item">health</a></li>
                   </ul>
-                  <h2 class="trend-name"><a href="#0" class="trend-link">сейчас в тренде: сколько витамина c в лимонах?</a></h2>
+                  <h3 class="trend-name"><a href="#0" class="trend-link">сейчас в тренде: сколько витамина c в лимонах?</a></h3>
                 </div>
               </div>
             </article>
           </div>
-        </section>
-      </aside>
+      </section>
       
       
 
@@ -94,8 +129,8 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="10 мест" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">travel</a></li>
-                  <li><a href="#0" class="card-item">Health</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">travel</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">Health</a></li>
                 </ul>
                 <h2><a href="#0" class="card-title">10 мест, ради которых стоит проснуться на рассвете</a></h2>
                 <div class="card-time">
@@ -112,8 +147,8 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="Йога" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">health</a></li>
-                  <li><a href="#0" class="card-item">lifestyle</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">health</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">lifestyle</a></li>
                 </ul>
                 <h2><a href="#0" class="card-title">Йога для начинающих в домашних условиях</a></h2>
                 <div class="card-time">
@@ -130,7 +165,7 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="музыкальные фестивали" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">music</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">music</a></li>
                 </ul>
                 <h2><a href="#0" class="card-title">Лучшие музыкальные фестивали этого лета</a></h2>
                 <div class="card-time">
@@ -147,8 +182,8 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="подход к кулинарии" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">lyfestyle</a></li>
-                  <li><a href="#0" class="card-item">food</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">lyfestyle</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">food</a></li>
                 </ul>
                 <h2><a href="#0" class="card-title">Наукоёмкий подход к кулинарии</a></h2>
                 <div class="card-time">
@@ -161,13 +196,13 @@
                 </div>            
               </div>
               </article>
-            <article class="card">
+            <article class="card _line">
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="принты на подушках" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">Lifestyle</a></li>
-                  <li><a href="#0" class="card-item">interior</a></li>
-                  <li><a href="#0" class="card-item">art</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">Lifestyle</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">interior</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">art</a></li>
                 </ul>
                 <h2><a href="#" class="card-title">делаем модные принты на
       подушках для интерьера</a></h2>
@@ -185,8 +220,8 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Как первый раз отправиться в горы?" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">travel</a></li>
-                  <li><a href="#0" class="card-item">lifestyle</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">travel</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">lifestyle</a></li>
                 </ul>
                 <h2><a href="#0" class="card-title">Как первый раз отправиться в горы?</a></h2>
                 <div class="card-time">
@@ -203,8 +238,8 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Наукоёмкий подход к кулинарии" class="card-img">
               <div class="card-about">
                 <ul class="card-list">
-                  <li><a href="#0" class="card-item">lifestyle</a></li>
-                  <li><a href="#0" class="card-item">food</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">lifestyle</a></li>
+                  <li class="card-items"><a href="#0" class="card-item">food</a></li>
                 </ul>
                 <h2><a href="#0" class="card-title">Наукоёмкий подход к кулинарии</a></h2>
                 <div class="card-time">
@@ -306,13 +341,13 @@
         </div>
       </div>
       
-      <aside class="product">
+      <section class="product">
         <h2 class="shop-title">наши изделия</h2>
         <div class="shop-container">
           <div class="card-product">
             <img src="https://github.com/netology-code/mq-diploma/blob/master/sources/img/shop-item-desk1.jpg?raw=true" alt="подушки" class="product-img">
             <div class="about-product">
-              <h2 class="product-title">подушки на диван</h2>
+              <h3 class="product-title">подушки на диван</h3>
               <p class="product-text">набор из двух подушек с моднымипринтами. Видео о создании <a href="#0" class="product-link">здесь.</a></p>
              <div class="about-price">
                <div class="price">
@@ -326,7 +361,7 @@
           <div class="card-product">
             <img src="https://github.com/netology-code/mq-diploma/blob/master/sources/img/shop-item-desk2.jpg?raw=true" alt="кукла" class="product-img">
             <div class="about-product">
-              <h2 class="product-title">кукла «зайчик»</h2>
+              <h3 class="product-title">кукла «зайчик»</h3>
               <p class="product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
               <div class="about-price">
                <div class="price">
@@ -339,7 +374,7 @@
           <div class="card-product">
             <img src="https://github.com/netology-code/mq-diploma/blob/master/sources/img/shop-item-desk3.jpg?raw=true" alt="рамка" class="product-img">
             <div class="about-product">
-              <h2 class="product-title">шестиугольная рамка</h2>
+              <h3 class="product-title">шестиугольная рамка</h3>
               <p class="product-text">необычная рамка для украшения дома из видео<a href="#0" class="product-link"> «как сделать рамку из подручных средств за 30 минут»</a></p>
              <div class="about-price">
                <div class="price">
@@ -351,19 +386,19 @@
             </div> 
           </div>
         </div>
-      </aside>
+      </section>
 
       <footer>
         <div class="holder">
           <address class="icon">
             <ul class="icon-list">
-              <li><a href="dribbble" class="social-icon social-icondribbble">
+              <li class="social-item"><a href="dribbble" class="social-icon social-icondribbble">
                 <span class="visually-hidden">Профиль компании в Dribbble</span>
               </a></li>
-              <li><a href="pinterest" class="social-icon social-iconpinterest">
+              <li class="social-item"><a href="pinterest" class="social-icon social-iconpinterest">
                 <span class="visually-hidden">Профиль компании в Pinterest</span>
               </a></li>
-              <li><a href="tumblr" class="social-icon social-icontumblr">
+              <li class="social-item"><a href="tumblr" class="social-icon social-icontumblr">
                 <span class="visually-hidden">Профиль компании в Tumblr</span>
               </a></li>
             </ul>
