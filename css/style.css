@@ -745,7 +745,7 @@ sup {
 .product-img {
   display: block;
   max-width: 100%;
-  height: 204px;
+  
   background-color: grey;
   
 
@@ -1148,6 +1148,10 @@ sup {
 
   .header-top {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .theme-item::after {
     width: 100%;
   }
 
